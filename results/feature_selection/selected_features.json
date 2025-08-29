@@ -1,0 +1,37 @@
+{
+  "selected_features": [
+    "cp",
+    "exang",
+    "oldpeak",
+    "slope",
+    "ca",
+    "thal",
+    "sex",
+    "thalach"
+  ],
+  "n_features": 8,
+  "selection_strategy": "ensemble",
+  "performance": {
+    "n_features": 8,
+    "cv_mean": 0.8381420765027322,
+    "cv_std": 0.02913014247328015,
+    "train_accuracy": 0.8481848184818482,
+    "feature_ratio": 0.6153846153846154
+  },
+  "original_features": [
+    "age",
+    "sex",
+    "cp",
+    "trestbps",
+    "chol",
+    "fbs",
+    "restecg",
+    "thalach",
+    "exang",
+    "oldpeak",
+    "slope",
+    "ca",
+    "thal"
+  ],
+  "n_original_features": 13
+}

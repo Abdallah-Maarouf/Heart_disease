@@ -1,0 +1,14 @@
+feature,selected,ranking
+sex,True,1
+cp,True,1
+fbs,True,1
+restecg,True,1
+exang,True,1
+oldpeak,True,1
+slope,True,1
+ca,True,1
+thal,True,1
+trestbps,False,2
+thalach,False,3
+age,False,4
+chol,False,5

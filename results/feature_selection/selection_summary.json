@@ -1,0 +1,98 @@
+{
+  "method_comparison": [
+    {
+      "method": "rfe",
+      "n_features": 9,
+      "cv_accuracy": 0.8381967213114756,
+      "cv_std": 0.042589450194608115,
+      "train_accuracy": 0.8514851485148515,
+      "feature_ratio": 0.6923076923076923,
+      "rank": 1
+    },
+    {
+      "method": "chi_square",
+      "n_features": 8,
+      "cv_accuracy": 0.8381420765027322,
+      "cv_std": 0.02913014247328015,
+      "train_accuracy": 0.8481848184818482,
+      "feature_ratio": 0.6153846153846154,
+      "rank": 2
+    },
+    {
+      "method": "univariate",
+      "n_features": 8,
+      "cv_accuracy": 0.8381420765027322,
+      "cv_std": 0.02913014247328015,
+      "train_accuracy": 0.8481848184818482,
+      "feature_ratio": 0.6153846153846154,
+      "rank": 3
+    },
+    {
+      "method": "mutual_information",
+      "n_features": 8,
+      "cv_accuracy": 0.8347540983606556,
+      "cv_std": 0.047351358524442624,
+      "train_accuracy": 0.8448844884488449,
+      "feature_ratio": 0.6153846153846154,
+      "rank": 4
+    }
+  ],
+  "best_method": "rfe",
+  "feature_frequency": {
+    "sex": 3,
+    "cp": 4,
+    "fbs": 1,
+    "restecg": 1,
+    "exang": 4,
+    "oldpeak": 4,
+    "slope": 4,
+    "ca": 4,
+    "thal": 4,
+    "thalach": 3,
+    "chol": 1
+  },
+  "most_frequent_features": [
+    [
+      "cp",
+      4
+    ],
+    [
+      "exang",
+      4
+    ],
+    [
+      "oldpeak",
+      4
+    ],
+    [
+      "slope",
+      4
+    ],
+    [
+      "ca",
+      4
+    ],
+    [
+      "thal",
+      4
+    ],
+    [
+      "sex",
+      3
+    ],
+    [
+      "thalach",
+      3
+    ],
+    [
+      "fbs",
+      1
+    ],
+    [
+      "restecg",
+      1
+    ]
+  ],
+  "total_methods": 5,
+  "avg_features_selected": 8.25
+}
