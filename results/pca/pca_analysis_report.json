@@ -1,0 +1,144 @@
+{
+  "pca_summary": {
+    "total_components": 13,
+    "total_features": 13,
+    "total_variance_explained": 1.0000000000000002,
+    "optimal_components_95pct": 12
+  },
+  "variance_analysis": {
+    "explained_variance_ratio": [
+      0.2373544840303605,
+      0.12290660073177909,
+      0.09520751259076377,
+      0.08417316642088887,
+      0.07550995752131419,
+      0.06744492043270361,
+      0.06665718648308824,
+      0.05985085902289072,
+      0.052003554838224025,
+      0.043222488561367324,
+      0.036006261738369474,
+      0.032079650504330315,
+      0.02758335712392
+    ],
+    "cumulative_variance": [
+      0.2373544840303605,
+      0.3602610847621396,
+      0.45546859735290335,
+      0.5396417637737922,
+      0.6151517212951064,
+      0.68259664172781,
+      0.7492538282108983,
+      0.809104687233789,
+      0.8611082420720131,
+      0.9043307306333804,
+      0.94033699237175,
+      0.9724166428760803,
+      1.0000000000000002
+    ],
+    "explained_variance": [
+      3.095825538395992,
+      1.6030764910015813,
+      1.24179600031463,
+      1.0978745116949706,
+      0.9848798764121075,
+      0.8796872237894682,
+      0.869412773367167,
+      0.7806375287786969,
+      0.6782847765157759,
+      0.5637529219974364,
+      0.4696313410180043,
+      0.41841636866409615,
+      0.359771005665963
+    ],
+    "singular_values": [
+      30.576777341564128,
+      22.00293390169769,
+      19.365494883813795,
+      18.20873698343411,
+      17.24626692001653,
+      16.29924972458608,
+      16.203785284830346,
+      15.35423504089886,
+      14.312302487991383,
+      13.048117965562152,
+      11.909184060523932,
+      11.241073940534198,
+      10.423571542955937
+    ]
+  },
+  "component_thresholds": {
+    "80.0%": 8,
+    "85.0%": 9,
+    "90.0%": 10,
+    "95.0%": 12,
+    "99.0%": 13
+  },
+  "top_components_summary": {
+    "PC1": {
+      "variance_explained": 0.2373544840303605,
+      "cumulative_variance": 0.2373544840303605,
+      "top_features": {
+        "oldpeak": 0.39778811486963106,
+        "thalach": -0.39213518649666734,
+        "slope": 0.35194027506548886
+      }
+    },
+    "PC2": {
+      "variance_explained": 0.12290660073177909,
+      "cumulative_variance": 0.3602610847621396,
+      "top_features": {
+        "sex": -0.4396598059869088,
+        "chol": 0.43167603035669966,
+        "age": 0.4234656506277901
+      }
+    },
+    "PC3": {
+      "variance_explained": 0.09520751259076377,
+      "cumulative_variance": 0.45546859735290335,
+      "top_features": {
+        "fbs": 0.5106438807669086,
+        "sex": 0.46951648785840727,
+        "cp": -0.4194286915274624
+      }
+    },
+    "PC4": {
+      "variance_explained": 0.08417316642088887,
+      "cumulative_variance": 0.5396417637737922,
+      "top_features": {
+        "slope": 0.5836589418369009,
+        "oldpeak": 0.3943368445968789,
+        "ca": -0.3842106917652941
+      }
+    },
+    "PC5": {
+      "variance_explained": 0.07550995752131419,
+      "cumulative_variance": 0.6151517212951064,
+      "top_features": {
+        "restecg": -0.6637968993117124,
+        "chol": -0.3838404194554084,
+        "age": 0.37009340789974815
+      }
+    }
+  },
+  "feature_names": [
+    "age",
+    "sex",
+    "cp",
+    "trestbps",
+    "chol",
+    "fbs",
+    "restecg",
+    "thalach",
+    "exang",
+    "oldpeak",
+    "slope",
+    "ca",
+    "thal"
+  ],
+  "recommendations": {
+    "dimensionality_reduction": "Consider reducing dimensions from 13 to 12 components (7.7% reduction) while retaining 95% of variance.",
+    "variance_concentration": "First two components explain 0.4% of variance. 2D visualization should be highly informative.",
+    "component_selection": "First 5 components explain 0.6% of variance. Consider using 5 components for most analyses."
+  }
+}
