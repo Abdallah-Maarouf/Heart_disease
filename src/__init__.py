@@ -10,17 +10,9 @@ __email__ = "contact@heartdisease-ml.com"
 
 # Import main modules
 from . import data_processor
-from . import feature_engineering
-from . import model_trainer
-from . import model_evaluator
-from . import hyperparameter_tuner
-from . import model_persistence
+from . import utils
 
 __all__ = [
     "data_processor",
-    "feature_engineering", 
-    "model_trainer",
-    "model_evaluator",
-    "hyperparameter_tuner",
-    "model_persistence"
+    "utils"
 ]
