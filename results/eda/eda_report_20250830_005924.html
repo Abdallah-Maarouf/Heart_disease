@@ -1,0 +1,224 @@
+
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <title>Heart Disease EDA Report</title>
+            <style>
+                body { font-family: Arial, sans-serif; margin: 40px; }
+                h1 { color: #2c3e50; }
+                h2 { color: #34495e; }
+                table { border-collapse: collapse; width: 100%; margin: 20px 0; }
+                th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+                th { background-color: #f2f2f2; }
+                .summary-box { background-color: #f8f9fa; padding: 20px; margin: 20px 0; border-radius: 5px; }
+            </style>
+        </head>
+        <body>
+            <h1>Heart Disease Dataset - Exploratory Data Analysis Report</h1>
+            <p><strong>Generated on:</strong> 2025-08-30 00:59:24</p>
+            
+            <div class="summary-box">
+                <h2>Dataset Overview</h2>
+                <p><strong>Shape:</strong> 303 rows × 14 columns</p>
+                <p><strong>Features:</strong> age, sex, cp, trestbps, chol, fbs, restecg, thalach, exang, oldpeak, slope, ca, thal, target</p>
+            </div>
+            
+            <h2>Descriptive Statistics</h2>
+            <table>
+                <tr><th>Feature</th><th>Count</th><th>Mean</th><th>Std</th><th>Min</th><th>25%</th><th>50%</th><th>75%</th><th>Max</th></tr>
+        
+                <tr>
+                    <td>age</td>
+                    <td>303.0</td>
+                    <td>54.44</td>
+                    <td>9.04</td>
+                    <td>29.00</td>
+                    <td>48.00</td>
+                    <td>56.00</td>
+                    <td>61.00</td>
+                    <td>77.00</td>
+                </tr>
+                
+                <tr>
+                    <td>sex</td>
+                    <td>303.0</td>
+                    <td>0.68</td>
+                    <td>0.47</td>
+                    <td>0.00</td>
+                    <td>0.00</td>
+                    <td>1.00</td>
+                    <td>1.00</td>
+                    <td>1.00</td>
+                </tr>
+                
+                <tr>
+                    <td>cp</td>
+                    <td>303.0</td>
+                    <td>3.16</td>
+                    <td>0.96</td>
+                    <td>1.00</td>
+                    <td>3.00</td>
+                    <td>3.00</td>
+                    <td>4.00</td>
+                    <td>4.00</td>
+                </tr>
+                
+                <tr>
+                    <td>trestbps</td>
+                    <td>303.0</td>
+                    <td>131.35</td>
+                    <td>16.65</td>
+                    <td>94.00</td>
+                    <td>120.00</td>
+                    <td>130.00</td>
+                    <td>140.00</td>
+                    <td>170.00</td>
+                </tr>
+                
+                <tr>
+                    <td>chol</td>
+                    <td>303.0</td>
+                    <td>245.58</td>
+                    <td>47.56</td>
+                    <td>126.00</td>
+                    <td>211.00</td>
+                    <td>241.00</td>
+                    <td>275.00</td>
+                    <td>371.00</td>
+                </tr>
+                
+                <tr>
+                    <td>fbs</td>
+                    <td>303.0</td>
+                    <td>0.15</td>
+                    <td>0.36</td>
+                    <td>0.00</td>
+                    <td>0.00</td>
+                    <td>0.00</td>
+                    <td>0.00</td>
+                    <td>1.00</td>
+                </tr>
+                
+                <tr>
+                    <td>restecg</td>
+                    <td>303.0</td>
+                    <td>0.99</td>
+                    <td>0.99</td>
+                    <td>0.00</td>
+                    <td>0.00</td>
+                    <td>1.00</td>
+                    <td>2.00</td>
+                    <td>2.00</td>
+                </tr>
+                
+                <tr>
+                    <td>thalach</td>
+                    <td>303.0</td>
+                    <td>149.65</td>
+                    <td>22.73</td>
+                    <td>84.75</td>
+                    <td>133.50</td>
+                    <td>153.00</td>
+                    <td>166.00</td>
+                    <td>202.00</td>
+                </tr>
+                
+                <tr>
+                    <td>exang</td>
+                    <td>303.0</td>
+                    <td>0.33</td>
+                    <td>0.47</td>
+                    <td>0.00</td>
+                    <td>0.00</td>
+                    <td>0.00</td>
+                    <td>1.00</td>
+                    <td>1.00</td>
+                </tr>
+                
+                <tr>
+                    <td>oldpeak</td>
+                    <td>303.0</td>
+                    <td>1.02</td>
+                    <td>1.11</td>
+                    <td>0.00</td>
+                    <td>0.00</td>
+                    <td>0.80</td>
+                    <td>1.60</td>
+                    <td>4.00</td>
+                </tr>
+                
+                <tr>
+                    <td>slope</td>
+                    <td>303.0</td>
+                    <td>1.60</td>
+                    <td>0.62</td>
+                    <td>1.00</td>
+                    <td>1.00</td>
+                    <td>2.00</td>
+                    <td>2.00</td>
+                    <td>3.00</td>
+                </tr>
+                
+                <tr>
+                    <td>ca</td>
+                    <td>303.0</td>
+                    <td>0.66</td>
+                    <td>0.93</td>
+                    <td>0.00</td>
+                    <td>0.00</td>
+                    <td>0.00</td>
+                    <td>1.00</td>
+                    <td>3.00</td>
+                </tr>
+                
+                <tr>
+                    <td>thal</td>
+                    <td>303.0</td>
+                    <td>4.72</td>
+                    <td>1.94</td>
+                    <td>3.00</td>
+                    <td>3.00</td>
+                    <td>3.00</td>
+                    <td>7.00</td>
+                    <td>7.00</td>
+                </tr>
+                
+                <tr>
+                    <td>target</td>
+                    <td>303.0</td>
+                    <td>0.46</td>
+                    <td>0.50</td>
+                    <td>0.00</td>
+                    <td>0.00</td>
+                    <td>0.00</td>
+                    <td>1.00</td>
+                    <td>1.00</td>
+                </tr>
+                
+            </table>
+            
+            <h2>Missing Values Analysis</h2>
+            <table>
+                <tr><th>Feature</th><th>Missing Values</th></tr>
+        <tr><td>age</td><td>0</td></tr><tr><td>sex</td><td>0</td></tr><tr><td>cp</td><td>0</td></tr><tr><td>trestbps</td><td>0</td></tr><tr><td>chol</td><td>0</td></tr><tr><td>fbs</td><td>0</td></tr><tr><td>restecg</td><td>0</td></tr><tr><td>thalach</td><td>0</td></tr><tr><td>exang</td><td>0</td></tr><tr><td>oldpeak</td><td>0</td></tr><tr><td>slope</td><td>0</td></tr><tr><td>ca</td><td>0</td></tr><tr><td>thal</td><td>0</td></tr><tr><td>target</td><td>0</td></tr>
+            </table>
+            
+            <h2>Feature Descriptions</h2>
+            <table>
+                <tr><th>Feature</th><th>Description</th><th>Unique Values</th></tr>
+        <tr><td>age</td><td>Age in years</td><td>41</td></tr><tr><td>sex</td><td>Sex (1 = male, 0 = female)</td><td>2</td></tr><tr><td>cp</td><td>Chest pain type (1-4)</td><td>4</td></tr><tr><td>trestbps</td><td>Resting blood pressure (mm Hg)</td><td>44</td></tr><tr><td>chol</td><td>Serum cholesterol (mg/dl)</td><td>148</td></tr><tr><td>fbs</td><td>Fasting blood sugar > 120 mg/dl (1 = true, 0 = false)</td><td>2</td></tr><tr><td>restecg</td><td>Resting ECG results (0-2)</td><td>3</td></tr><tr><td>thalach</td><td>Maximum heart rate achieved</td><td>91</td></tr><tr><td>exang</td><td>Exercise induced angina (1 = yes, 0 = no)</td><td>2</td></tr><tr><td>oldpeak</td><td>ST depression induced by exercise</td><td>36</td></tr><tr><td>slope</td><td>Slope of peak exercise ST segment (1-3)</td><td>3</td></tr><tr><td>ca</td><td>Number of major vessels colored by fluoroscopy (0-3)</td><td>4</td></tr><tr><td>thal</td><td>Thalassemia (3 = normal, 6 = fixed defect, 7 = reversible defect)</td><td>3</td></tr><tr><td>target</td><td>Heart disease presence (0 = no, 1 = yes)</td><td>2</td></tr>
+            </table>
+            
+            <div class="summary-box">
+                <h2>Key Findings</h2>
+                <ul>
+                    <li>Dataset contains information about heart disease prediction with 14 features</li>
+                    <li>Target variable shows class distribution for heart disease presence/absence</li>
+                    <li>Numerical features include age, blood pressure, cholesterol, and heart rate measurements</li>
+                    <li>Categorical features include chest pain type, ECG results, and other clinical indicators</li>
+                </ul>
+            </div>
+            
+        </body>
+        </html>
+        
