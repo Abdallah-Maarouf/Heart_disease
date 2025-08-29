@@ -1,0 +1,137 @@
+{
+  "timestamp": "2025-08-30T01:58:19.381954",
+  "models": {
+    "logistic_regression": {
+      "parameters": {
+        "C": 1.0,
+        "penalty": "l2",
+        "max_iter": 1000
+      },
+      "training_time": "2025-08-30T01:58:19.415508",
+      "test_metrics": {
+        "accuracy": 0.8524590163934426,
+        "precision": 0.8064516129032258,
+        "recall": 0.8928571428571429,
+        "f1_score": 0.8474576271186439,
+        "roc_auc": 0.9350649350649352
+      }
+    },
+    "decision_tree": {
+      "parameters": {
+        "max_depth": null,
+        "min_samples_split": 2,
+        "min_samples_leaf": 1,
+        "criterion": "gini"
+      },
+      "training_time": "2025-08-30T01:58:19.418582",
+      "test_metrics": {
+        "accuracy": 0.7540983606557377,
+        "precision": 0.6857142857142857,
+        "recall": 0.8571428571428571,
+        "f1_score": 0.7619047619047619,
+        "roc_auc": 0.7619047619047621
+      }
+    },
+    "random_forest": {
+      "parameters": {
+        "n_estimators": 100,
+        "max_features": "sqrt",
+        "max_depth": null,
+        "min_samples_split": 2
+      },
+      "training_time": "2025-08-30T01:58:19.682381",
+      "test_metrics": {
+        "accuracy": 0.8688524590163934,
+        "precision": 0.8125,
+        "recall": 0.9285714285714286,
+        "f1_score": 0.8666666666666666,
+        "roc_auc": 0.9410173160173161
+      }
+    },
+    "svm": {
+      "parameters": {
+        "kernel": "rbf",
+        "C": 1.0,
+        "gamma": "scale",
+        "degree": 3
+      },
+      "training_time": "2025-08-30T01:58:19.682381",
+      "test_metrics": {
+        "accuracy": 0.8524590163934426,
+        "precision": 0.8064516129032258,
+        "recall": 0.8928571428571429,
+        "f1_score": 0.8474576271186439,
+        "roc_auc": 0.9393939393939393
+      }
+    }
+  },
+  "data_info": {
+    "total_samples": 303,
+    "n_features": 8,
+    "feature_names": [
+      "cp",
+      "exang",
+      "oldpeak",
+      "slope",
+      "ca",
+      "thal",
+      "sex",
+      "thalach"
+    ],
+    "class_distribution": {
+      "0": 164,
+      "1": 139
+    },
+    "class_balance": {
+      "class_0": 164,
+      "class_1": 139,
+      "balance_ratio": 0.8475609756097561
+    }
+  },
+  "cross_validation_scores": {
+    "logistic_regression": {
+      "mean_accuracy": 0.8284699453551913,
+      "std_accuracy": 0.026241117649347105,
+      "individual_scores": [
+        0.8524590163934426,
+        0.8032786885245902,
+        0.8032786885245902,
+        0.8166666666666667,
+        0.8666666666666667
+      ]
+    },
+    "decision_tree": {
+      "mean_accuracy": 0.7325683060109289,
+      "std_accuracy": 0.023032900323181622,
+      "individual_scores": [
+        0.7704918032786885,
+        0.7377049180327869,
+        0.7213114754098361,
+        0.7,
+        0.7333333333333333
+      ]
+    },
+    "random_forest": {
+      "mean_accuracy": 0.8018579234972677,
+      "std_accuracy": 0.040945483179365,
+      "individual_scores": [
+        0.8688524590163934,
+        0.8032786885245902,
+        0.7704918032786885,
+        0.75,
+        0.8166666666666667
+      ]
+    },
+    "svm": {
+      "mean_accuracy": 0.8053551912568306,
+      "std_accuracy": 0.0279387316349993,
+      "individual_scores": [
+        0.819672131147541,
+        0.7704918032786885,
+        0.8032786885245902,
+        0.7833333333333333,
+        0.85
+      ]
+    }
+  }
+}
