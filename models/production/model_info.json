@@ -1,0 +1,40 @@
+{
+  "model_name": "random_forest",
+  "version": "20250830_142210",
+  "production_timestamp": "2025-08-30T14:22:11.137892",
+  "model_type": "RandomForestClassifier",
+  "performance_metrics": {
+    "test_accuracy": 0.9016393442622951,
+    "optimization_method": "RandomizedSearchCV"
+  },
+  "model_parameters": {
+    "bootstrap": true,
+    "ccp_alpha": 0.0,
+    "class_weight": null,
+    "criterion": "gini",
+    "max_depth": 5,
+    "max_features": "log2",
+    "max_leaf_nodes": null,
+    "max_samples": null,
+    "min_impurity_decrease": 0.0,
+    "min_samples_leaf": 1,
+    "min_samples_split": 5,
+    "min_weight_fraction_leaf": 0.0,
+    "n_estimators": 100,
+    "n_jobs": null,
+    "oob_score": false,
+    "random_state": 42,
+    "verbose": 0,
+    "warm_start": false
+  },
+  "file_paths": {
+    "final_model": "models\\production\\final_model.pkl",
+    "complete_pipeline": "models\\production\\complete_pipeline.pkl",
+    "model_info": "models\\production\\model_info.json"
+  },
+  "usage_instructions": {
+    "load_model": "joblib.load('final_model.pkl')",
+    "load_pipeline": "joblib.load('complete_pipeline.pkl')",
+    "prediction": "pipeline.predict(X) or model.predict(preprocessed_X)"
+  }
+}

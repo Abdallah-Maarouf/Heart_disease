@@ -1,0 +1,53 @@
+{
+  "model_name": "random_forest",
+  "version": "20250830_142149",
+  "timestamp": "2025-08-30T14:21:49.709306",
+  "model_type": "RandomForestClassifier",
+  "preprocessing_steps": [
+    "scaler"
+  ],
+  "pipeline_path": "models\\versions\\random_forest_pipeline_v20250830_142149.pkl",
+  "model_path": "models\\versions\\random_forest_model_v20250830_142149.pkl",
+  "file_sizes": {
+    "pipeline_mb": 0.34516143798828125,
+    "model_mb": 0.34410953521728516
+  },
+  "model_parameters": {
+    "bootstrap": true,
+    "ccp_alpha": 0.0,
+    "class_weight": null,
+    "criterion": "gini",
+    "max_depth": 5,
+    "max_features": "log2",
+    "max_leaf_nodes": null,
+    "max_samples": null,
+    "min_impurity_decrease": 0.0,
+    "min_samples_leaf": 1,
+    "min_samples_split": 5,
+    "min_weight_fraction_leaf": 0.0,
+    "n_estimators": 100,
+    "n_jobs": null,
+    "oob_score": false,
+    "random_state": 42,
+    "verbose": 0,
+    "warm_start": false
+  },
+  "pipeline_hash": "391ed7750d6a6c3da63959b4730a358fd88c9b0bf6f11b13f375e8d4259d1fe9",
+  "optimization_results": {
+    "best_params": {
+      "n_estimators": 100,
+      "min_samples_split": 5,
+      "min_samples_leaf": 1,
+      "max_features": "log2",
+      "max_depth": 5
+    },
+    "best_cv_score": 0.8343537414965987,
+    "test_accuracy": 0.9016393442622951,
+    "improvement": 0.016393442622950838
+  },
+  "source": "hyperparameter_optimization",
+  "performance_metrics": {
+    "test_accuracy": 0.9016393442622951,
+    "optimization_method": "RandomizedSearchCV"
+  }
+}
