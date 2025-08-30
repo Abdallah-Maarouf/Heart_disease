@@ -1,0 +1,408 @@
+{
+  "timestamp": "2025-08-30T02:08:40.927897",
+  "models": {},
+  "comparison": {
+    "performance_table": [
+      {
+        "Model": "Decision Tree",
+        "Accuracy": "0.7541",
+        "Precision": "0.6970",
+        "Recall": "0.8214",
+        "F1-Score": "0.7541",
+        "ROC-AUC": "0.7592",
+        "Specificity": "0.6970",
+        "Avg Precision": "0.6545"
+      },
+      {
+        "Model": "Logistic Regression",
+        "Accuracy": "0.8525",
+        "Precision": "0.8065",
+        "Recall": "0.8929",
+        "F1-Score": "0.8475",
+        "ROC-AUC": "0.9340",
+        "Specificity": "0.8182",
+        "Avg Precision": "0.9020"
+      },
+      {
+        "Model": "Random Forest",
+        "Accuracy": "0.8689",
+        "Precision": "0.8125",
+        "Recall": "0.9286",
+        "F1-Score": "0.8667",
+        "ROC-AUC": "0.9389",
+        "Specificity": "0.8182",
+        "Avg Precision": "0.9302"
+      },
+      {
+        "Model": "Svm 20250830",
+        "Accuracy": "0.8525",
+        "Precision": "0.8065",
+        "Recall": "0.8929",
+        "F1-Score": "0.8475",
+        "ROC-AUC": "0.9361",
+        "Specificity": "0.8182",
+        "Avg Precision": "0.9251"
+      }
+    ]
+  },
+  "recommendations": {
+    "overall_best_model": {
+      "model": "random_forest",
+      "score": 0.8691476385636222
+    },
+    "use_case_recommendations": {
+      "high_precision_needed": {
+        "model": "random_forest",
+        "reason": "Best for minimizing false positives (avoiding unnecessary treatments)"
+      },
+      "high_recall_needed": {
+        "model": "random_forest",
+        "reason": "Best for minimizing false negatives (catching all disease cases)"
+      },
+      "balanced_performance": {
+        "model": "random_forest",
+        "reason": "Best balance between precision and recall"
+      },
+      "probability_ranking": {
+        "model": "random_forest",
+        "reason": "Best for ranking patients by disease probability"
+      }
+    },
+    "performance_insights": [
+      "Good overall model performance (>75% accuracy)",
+      "Significant precision-recall imbalance detected - consider class balancing techniques"
+    ],
+    "improvement_suggestions": [
+      "Consider hyperparameter tuning for better performance",
+      "Explore feature engineering and selection techniques",
+      "Try ensemble methods to combine model strengths"
+    ]
+  },
+  "evaluation_timestamp": "2025-08-30T02:09:02.270572",
+  "dataset_info": {
+    "test_samples": 61,
+    "positive_class_ratio": 0.45901639344262296,
+    "class_distribution": {
+      "no_disease": 33,
+      "disease": 28
+    }
+  },
+  "model_metrics": {
+    "decision_tree": {
+      "accuracy": 0.7540983606557377,
+      "precision": 0.696969696969697,
+      "recall": 0.8214285714285714,
+      "f1_score": 0.7540983606557378,
+      "specificity": 0.696969696969697,
+      "roc_auc": 0.7591991341991343,
+      "average_precision": 0.6544780356255766,
+      "true_positives": 23,
+      "true_negatives": 23,
+      "false_positives": 10,
+      "false_negatives": 5,
+      "sensitivity": 0.8214285714285714,
+      "positive_predictive_value": 0.696969696969697,
+      "negative_predictive_value": 0.8214285714285714
+    },
+    "logistic_regression": {
+      "accuracy": 0.8524590163934426,
+      "precision": 0.8064516129032258,
+      "recall": 0.8928571428571429,
+      "f1_score": 0.8474576271186439,
+      "specificity": 0.8181818181818182,
+      "roc_auc": 0.933982683982684,
+      "average_precision": 0.9019808654027712,
+      "true_positives": 25,
+      "true_negatives": 27,
+      "false_positives": 6,
+      "false_negatives": 3,
+      "sensitivity": 0.8928571428571429,
+      "positive_predictive_value": 0.8064516129032258,
+      "negative_predictive_value": 0.9
+    },
+    "random_forest": {
+      "accuracy": 0.8688524590163934,
+      "precision": 0.8125,
+      "recall": 0.9285714285714286,
+      "f1_score": 0.8666666666666666,
+      "specificity": 0.8181818181818182,
+      "roc_auc": 0.9388528138528137,
+      "average_precision": 0.9302007981758256,
+      "true_positives": 26,
+      "true_negatives": 27,
+      "false_positives": 6,
+      "false_negatives": 2,
+      "sensitivity": 0.9285714285714286,
+      "positive_predictive_value": 0.8125,
+      "negative_predictive_value": 0.9310344827586207
+    },
+    "svm_20250830": {
+      "accuracy": 0.8524590163934426,
+      "precision": 0.8064516129032258,
+      "recall": 0.8928571428571429,
+      "f1_score": 0.8474576271186439,
+      "specificity": 0.8181818181818182,
+      "roc_auc": 0.9361471861471861,
+      "average_precision": 0.9251435050045836,
+      "true_positives": 25,
+      "true_negatives": 27,
+      "false_positives": 6,
+      "false_negatives": 3,
+      "sensitivity": 0.8928571428571429,
+      "positive_predictive_value": 0.8064516129032258,
+      "negative_predictive_value": 0.9
+    }
+  },
+  "cross_validation_results": {
+    "decision_tree": {
+      "accuracy": {
+        "mean": 0.7292896174863388,
+        "std": 0.025442660507361537,
+        "scores": [
+          0.7704918032786885,
+          0.7377049180327869,
+          0.7049180327868853,
+          0.7,
+          0.7333333333333333
+        ]
+      },
+      "precision": {
+        "mean": 0.7186594202898551,
+        "std": 0.04365754100231035,
+        "scores": [
+          0.7916666666666666,
+          0.6875,
+          0.7083333333333334,
+          0.6666666666666666,
+          0.7391304347826086
+        ]
+      },
+      "recall": {
+        "mean": 0.6830687830687832,
+        "std": 0.06348434697376663,
+        "scores": [
+          0.6785714285714286,
+          0.7857142857142857,
+          0.6071428571428571,
+          0.7142857142857143,
+          0.6296296296296297
+        ]
+      },
+      "f1": {
+        "mean": 0.6975207780725022,
+        "std": 0.03054281237539728,
+        "scores": [
+          0.7307692307692307,
+          0.7333333333333334,
+          0.6538461538461539,
+          0.689655172413793,
+          0.68
+        ]
+      },
+      "roc_auc": {
+        "mean": 0.7254359066859066,
+        "std": 0.024853710878690826,
+        "scores": [
+          0.7635281385281386,
+          0.7413419913419914,
+          0.6975108225108224,
+          0.7008928571428572,
+          0.7239057239057238
+        ]
+      }
+    },
+    "logistic_regression": {
+      "accuracy": {
+        "mean": 0.8317486338797814,
+        "std": 0.02379930418879935,
+        "scores": [
+          0.8524590163934426,
+          0.819672131147541,
+          0.8032786885245902,
+          0.8166666666666667,
+          0.8666666666666667
+        ]
+      },
+      "precision": {
+        "mean": 0.8424368623768924,
+        "std": 0.04207616495551608,
+        "scores": [
+          0.8275862068965517,
+          0.8148148148148148,
+          0.8636363636363636,
+          0.7931034482758621,
+          0.9130434782608695
+        ]
+      },
+      "recall": {
+        "mean": 0.784126984126984,
+        "std": 0.059845690544472536,
+        "scores": [
+          0.8571428571428571,
+          0.7857142857142857,
+          0.6785714285714286,
+          0.8214285714285714,
+          0.7777777777777778
+        ]
+      },
+      "f1": {
+        "mean": 0.8098245614035087,
+        "std": 0.030131342729991607,
+        "scores": [
+          0.8421052631578947,
+          0.7999999999999999,
+          0.76,
+          0.8070175438596492,
+          0.84
+        ]
+      },
+      "roc_auc": {
+        "mean": 0.8952937109187108,
+        "std": 0.014674383171124824,
+        "scores": [
+          0.9101731601731601,
+          0.8744588744588745,
+          0.9134199134199135,
+          0.8861607142857142,
+          0.8922558922558923
+        ]
+      }
+    },
+    "random_forest": {
+      "accuracy": {
+        "mean": 0.7985792349726776,
+        "std": 0.03424507807715403,
+        "scores": [
+          0.8524590163934426,
+          0.7868852459016393,
+          0.7868852459016393,
+          0.75,
+          0.8166666666666667
+        ]
+      },
+      "precision": {
+        "mean": 0.7948558448048704,
+        "std": 0.04314993338953557,
+        "scores": [
+          0.8275862068965517,
+          0.7272727272727273,
+          0.8260869565217391,
+          0.76,
+          0.8333333333333334
+        ]
+      },
+      "recall": {
+        "mean": 0.7624338624338624,
+        "std": 0.08059279684069975,
+        "scores": [
+          0.8571428571428571,
+          0.8571428571428571,
+          0.6785714285714286,
+          0.6785714285714286,
+          0.7407407407407407
+        ]
+      },
+      "f1": {
+        "mean": 0.7750766811681776,
+        "std": 0.04240615000238097,
+        "scores": [
+          0.8421052631578947,
+          0.7868852459016394,
+          0.7450980392156864,
+          0.7169811320754718,
+          0.7843137254901961
+        ]
+      },
+      "roc_auc": {
+        "mean": 0.8878479737854738,
+        "std": 0.022948215388808108,
+        "scores": [
+          0.9258658008658008,
+          0.8917748917748918,
+          0.8901515151515151,
+          0.8560267857142858,
+          0.8754208754208754
+        ]
+      }
+    },
+    "svm_20250830": {
+      "accuracy": {
+        "mean": 0.8020218579234972,
+        "std": 0.031174180919049062,
+        "scores": [
+          0.819672131147541,
+          0.7704918032786885,
+          0.8032786885245902,
+          0.7666666666666667,
+          0.85
+        ]
+      },
+      "precision": {
+        "mean": 0.8180212380212379,
+        "std": 0.06314626967386403,
+        "scores": [
+          0.8148148148148148,
+          0.7333333333333333,
+          0.8636363636363636,
+          0.7692307692307693,
+          0.9090909090909091
+        ]
+      },
+      "recall": {
+        "mean": 0.741005291005291,
+        "std": 0.04149646096019299,
+        "scores": [
+          0.7857142857142857,
+          0.7857142857142857,
+          0.6785714285714286,
+          0.7142857142857143,
+          0.7407407407407407
+        ]
+      },
+      "f1": {
+        "mean": 0.7751375922016316,
+        "std": 0.02828344436853608,
+        "scores": [
+          0.7999999999999999,
+          0.7586206896551724,
+          0.76,
+          0.7407407407407408,
+          0.8163265306122449
+        ]
+      },
+      "roc_auc": {
+        "mean": 0.8988398368606703,
+        "std": 0.0199845576319151,
+        "scores": [
+          0.91991341991342,
+          0.8820346320346322,
+          0.9047619047619048,
+          0.8694196428571428,
+          0.9180695847362514
+        ]
+      }
+    }
+  },
+  "best_performing_models": {
+    "accuracy": {
+      "model": "random_forest",
+      "score": 0.8688524590163934
+    },
+    "precision": {
+      "model": "random_forest",
+      "score": 0.8125
+    },
+    "recall": {
+      "model": "random_forest",
+      "score": 0.9285714285714286
+    },
+    "f1_score": {
+      "model": "random_forest",
+      "score": 0.8666666666666666
+    },
+    "roc_auc": {
+      "model": "random_forest",
+      "score": 0.9388528138528137
+    }
+  }
+}

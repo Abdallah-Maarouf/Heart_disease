@@ -1,0 +1,11 @@
+Classification Report - Decision Tree
+============================================================
+
+              precision    recall  f1-score   support
+
+  No Disease       0.82      0.70      0.75        33
+     Disease       0.70      0.82      0.75        28
+
+    accuracy                           0.75        61
+   macro avg       0.76      0.76      0.75        61
+weighted avg       0.76      0.75      0.75        61

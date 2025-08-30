@@ -1,0 +1,70 @@
+HEART DISEASE CLASSIFICATION - MODEL EVALUATION SUMMARY
+============================================================
+
+Evaluation Date: 2025-08-30T02:09:02.270572
+Test Samples: 61
+Positive Class Ratio: 0.459
+
+MODEL PERFORMANCE COMPARISON
+------------------------------
+
+Decision Tree:
+  Accuracy:  0.7541
+  Precision: 0.6970
+  Recall:    0.8214
+  F1-Score:  0.7541
+  ROC-AUC:   0.7592
+
+Logistic Regression:
+  Accuracy:  0.8525
+  Precision: 0.8065
+  Recall:    0.8929
+  F1-Score:  0.8475
+  ROC-AUC:   0.9340
+
+Random Forest:
+  Accuracy:  0.8689
+  Precision: 0.8125
+  Recall:    0.9286
+  F1-Score:  0.8667
+  ROC-AUC:   0.9389
+
+Svm 20250830:
+  Accuracy:  0.8525
+  Precision: 0.8065
+  Recall:    0.8929
+  F1-Score:  0.8475
+  ROC-AUC:   0.9361
+
+
+BEST PERFORMING MODELS
+-------------------------
+ACCURACY: Random Forest (0.8689)
+PRECISION: Random Forest (0.8125)
+RECALL: Random Forest (0.9286)
+F1_SCORE: Random Forest (0.8667)
+ROC_AUC: Random Forest (0.9389)
+
+
+RECOMMENDations
+---------------
+Overall Best Model: Random Forest
+
+Use Case Recommendations:
+  High Precision Needed: Random Forest
+    Reason: Best for minimizing false positives (avoiding unnecessary treatments)
+  High Recall Needed: Random Forest
+    Reason: Best for minimizing false negatives (catching all disease cases)
+  Balanced Performance: Random Forest
+    Reason: Best balance between precision and recall
+  Probability Ranking: Random Forest
+    Reason: Best for ranking patients by disease probability
+
+Performance Insights:
+  • Good overall model performance (>75% accuracy)
+  • Significant precision-recall imbalance detected - consider class balancing techniques
+
+Improvement Suggestions:
+  • Consider hyperparameter tuning for better performance
+  • Explore feature engineering and selection techniques
+  • Try ensemble methods to combine model strengths
