@@ -1,0 +1,55 @@
+{
+  "timestamp": "20250830_022954",
+  "models_saved": [
+    "logistic_regression",
+    "decision_tree",
+    "random_forest",
+    "svm"
+  ],
+  "optimization_summary": {
+    "logistic_regression": {
+      "best_params": {
+        "solver": "saga",
+        "penalty": "l1",
+        "max_iter": 1000,
+        "C": 0.1
+      },
+      "best_cv_score": 0.8386904761904763,
+      "test_accuracy": 0.8360655737704918,
+      "improvement": -0.032786885245901565
+    },
+    "decision_tree": {
+      "best_params": {
+        "min_samples_split": 10,
+        "min_samples_leaf": 5,
+        "max_depth": null,
+        "criterion": "gini"
+      },
+      "best_cv_score": 0.7722789115646258,
+      "test_accuracy": 0.7213114754098361,
+      "improvement": -0.09836065573770492
+    },
+    "random_forest": {
+      "best_params": {
+        "n_estimators": 100,
+        "min_samples_split": 5,
+        "min_samples_leaf": 1,
+        "max_features": "log2",
+        "max_depth": 5
+      },
+      "best_cv_score": 0.8343537414965987,
+      "test_accuracy": 0.9016393442622951,
+      "improvement": 0.016393442622950838
+    },
+    "svm": {
+      "best_params": {
+        "kernel": "rbf",
+        "gamma": 0.01,
+        "C": 1
+      },
+      "best_cv_score": 0.8344387755102041,
+      "test_accuracy": 0.8688524590163934,
+      "improvement": 0.0
+    }
+  }
+}
