@@ -667,9 +667,19 @@ class HeartDiseasePredictor:
             self.display_prediction_history()
     
     def render_data_explorer_page(self):
-        """Render data explorer page (placeholder for now)"""
-        st.title("📊 Data Explorer")
-        st.info("🚧 Data exploration features will be implemented in the next phase.")
+        """Render comprehensive data explorer page"""
+        from visualization_dashboard import render_data_explorer_page
+        render_data_explorer_page()
+    
+    def render_model_performance_page(self):
+        """Render model performance analysis page"""
+        from visualization_dashboard import render_model_performance_page
+        render_model_performance_page()
+    
+    def render_advanced_analysis_page(self):
+        """Render advanced analysis page"""
+        from visualization_dashboard import render_advanced_analysis_page
+        render_advanced_analysis_page()
         
         # Show some basic information
         st.markdown("""
@@ -762,6 +772,10 @@ class HeartDiseasePredictor:
             self.render_prediction_page()
         elif selected_page == 'Data Explorer':
             self.render_data_explorer_page()
+        elif selected_page == 'Model Performance':
+            self.render_model_performance_page()
+        elif selected_page == 'Advanced Analysis':
+            self.render_advanced_analysis_page()
         elif selected_page == 'Model Info':
             self.render_model_info_page()
 

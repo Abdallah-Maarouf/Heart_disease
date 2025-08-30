@@ -8,8 +8,8 @@ APP_DESCRIPTION = "AI-powered heart disease risk assessment using machine learni
 VERSION = "1.0.0"
 
 # Model Configuration
-MODEL_PATH = os.path.join("models", "production", "complete_pipeline.pkl")
-BACKUP_MODEL_PATH = os.path.join("models", "production", "final_model.pkl")
+MODEL_PATH = os.path.join(os.path.dirname(__file__), "..", "models", "production", "complete_pipeline.pkl")
+BACKUP_MODEL_PATH = os.path.join(os.path.dirname(__file__), "..", "models", "production", "final_model.pkl")
 
 # Feature Configuration
 FEATURE_NAMES = [
@@ -143,10 +143,12 @@ MAIN_CONTENT_WIDTH = 700
 PAGES = {
     'Prediction': '🔮 Heart Disease Prediction',
     'Data Explorer': '📊 Data Explorer',
-    'Model Info': '🤖 Model Information'
+    'Model Performance': '🤖 Model Performance',
+    'Advanced Analysis': '🔬 Advanced Analysis',
+    'Model Info': 'ℹ️ Model Information'
 }
 
-# Styling
+# Styling with improved accessibility
 CUSTOM_CSS = """
 <style>
     .main-header {
@@ -158,6 +160,7 @@ CUSTOM_CSS = """
         font-size: 2.5rem;
         font-weight: bold;
         margin-bottom: 2rem;
+        role: "banner";
     }
     
     .prediction-result {
@@ -167,18 +170,20 @@ CUSTOM_CSS = """
         font-size: 1.2rem;
         font-weight: bold;
         margin: 1rem 0;
+        role: "alert";
+        aria-live: "polite";
     }
     
     .low-risk {
         background-color: #d4edda;
         color: #155724;
-        border: 1px solid #c3e6cb;
+        border: 2px solid #c3e6cb;
     }
     
     .high-risk {
         background-color: #f8d7da;
         color: #721c24;
-        border: 1px solid #f5c6cb;
+        border: 2px solid #f5c6cb;
     }
     
     .feature-info {
@@ -187,6 +192,42 @@ CUSTOM_CSS = """
         border-radius: 5px;
         margin: 0.5rem 0;
         font-size: 0.9rem;
+    }
+    
+    /* Improve button accessibility */
+    .stButton > button {
+        border: 2px solid transparent;
+        transition: all 0.3s ease;
+    }
+    
+    .stButton > button:focus {
+        border: 2px solid #0066cc;
+        outline: 2px solid #0066cc;
+        outline-offset: 2px;
+    }
+    
+    /* Improve form accessibility */
+    .stSelectbox > div > div {
+        border: 1px solid #ccc;
+    }
+    
+    .stNumberInput > div > div > input {
+        border: 1px solid #ccc;
+    }
+    
+    /* High contrast mode support */
+    @media (prefers-contrast: high) {
+        .low-risk {
+            background-color: #ffffff;
+            color: #000000;
+            border: 3px solid #000000;
+        }
+        
+        .high-risk {
+            background-color: #ffffff;
+            color: #000000;
+            border: 3px solid #000000;
+        }
     }
 </style>
 """

@@ -1,0 +1,351 @@
+[
+  {
+    "timestamp": "2025-08-30T20:16:04.912238",
+    "input_data": {
+      "age": 50,
+      "sex": 1
+    },
+    "prediction": 0,
+    "confidence": 0.85
+  },
+  {
+    "timestamp": "2025-08-30T20:26:30.367187",
+    "input_data": {
+      "age": 50,
+      "sex": 1,
+      "cp": 4,
+      "trestbps": 120,
+      "chol": 200,
+      "fbs": 0,
+      "restecg": 0,
+      "thalach": 150,
+      "exang": 0,
+      "oldpeak": 1.0,
+      "slope": 2,
+      "ca": 0,
+      "thal": 3
+    },
+    "prediction": 1,
+    "confidence": 0.6356863388983625
+  },
+  {
+    "timestamp": "2025-08-30T20:26:51.002951",
+    "input_data": {
+      "age": 50,
+      "sex": 1,
+      "cp": 4,
+      "trestbps": 120,
+      "chol": 200,
+      "fbs": 0,
+      "restecg": 0,
+      "thalach": 150,
+      "exang": 0,
+      "oldpeak": 1.0,
+      "slope": 2,
+      "ca": 0,
+      "thal": 3
+    },
+    "prediction": 1,
+    "confidence": 0.6356863388983625
+  },
+  {
+    "timestamp": "2025-08-30T20:27:12.926970",
+    "input_data": {
+      "age": 50,
+      "sex": 1,
+      "cp": 4,
+      "trestbps": 120,
+      "chol": 200,
+      "fbs": 0,
+      "restecg": 0,
+      "thalach": 150,
+      "exang": 0,
+      "oldpeak": 1.0,
+      "slope": 2,
+      "ca": 0,
+      "thal": 3
+    },
+    "prediction": 1,
+    "confidence": 0.6356863388983625
+  },
+  {
+    "timestamp": "2025-08-30T20:27:18.495054",
+    "input_data": {
+      "age": 50,
+      "sex": 1,
+      "cp": 4,
+      "trestbps": 120,
+      "chol": 200,
+      "fbs": 0,
+      "restecg": 0,
+      "thalach": 150,
+      "exang": 0,
+      "oldpeak": 1.0,
+      "slope": 2,
+      "ca": 0,
+      "thal": 3
+    },
+    "prediction": 1,
+    "confidence": 0.6356863388983625
+  },
+  {
+    "timestamp": "2025-08-30T20:27:19.528799",
+    "input_data": {
+      "age": 50,
+      "sex": 1,
+      "cp": 4,
+      "trestbps": 120,
+      "chol": 200,
+      "fbs": 0,
+      "restecg": 0,
+      "thalach": 150,
+      "exang": 0,
+      "oldpeak": 1.0,
+      "slope": 2,
+      "ca": 0,
+      "thal": 3
+    },
+    "prediction": 1,
+    "confidence": 0.6356863388983625
+  },
+  {
+    "timestamp": "2025-08-30T20:27:19.884461",
+    "input_data": {
+      "age": 50,
+      "sex": 1,
+      "cp": 4,
+      "trestbps": 120,
+      "chol": 200,
+      "fbs": 0,
+      "restecg": 0,
+      "thalach": 150,
+      "exang": 0,
+      "oldpeak": 1.0,
+      "slope": 2,
+      "ca": 0,
+      "thal": 3
+    },
+    "prediction": 1,
+    "confidence": 0.6356863388983625
+  },
+  {
+    "timestamp": "2025-08-30T20:27:20.367621",
+    "input_data": {
+      "age": 50,
+      "sex": 1,
+      "cp": 4,
+      "trestbps": 120,
+      "chol": 200,
+      "fbs": 0,
+      "restecg": 0,
+      "thalach": 150,
+      "exang": 0,
+      "oldpeak": 1.0,
+      "slope": 2,
+      "ca": 0,
+      "thal": 3
+    },
+    "prediction": 1,
+    "confidence": 0.6356863388983625
+  },
+  {
+    "timestamp": "2025-08-30T20:27:20.697789",
+    "input_data": {
+      "age": 50,
+      "sex": 1,
+      "cp": 4,
+      "trestbps": 120,
+      "chol": 200,
+      "fbs": 0,
+      "restecg": 0,
+      "thalach": 150,
+      "exang": 0,
+      "oldpeak": 1.0,
+      "slope": 2,
+      "ca": 0,
+      "thal": 3
+    },
+    "prediction": 1,
+    "confidence": 0.6356863388983625
+  },
+  {
+    "timestamp": "2025-08-30T20:27:29.898726",
+    "input_data": {
+      "age": 50,
+      "sex": 1,
+      "cp": 4,
+      "trestbps": 120,
+      "chol": 200,
+      "fbs": 0,
+      "restecg": 0,
+      "thalach": 150,
+      "exang": 0,
+      "oldpeak": 1.0,
+      "slope": 2,
+      "ca": 0,
+      "thal": 3
+    },
+    "prediction": 1,
+    "confidence": 0.6356863388983625
+  },
+  {
+    "timestamp": "2025-08-30T20:27:32.229298",
+    "input_data": {
+      "age": 50,
+      "sex": 1,
+      "cp": 4,
+      "trestbps": 120,
+      "chol": 200,
+      "fbs": 0,
+      "restecg": 0,
+      "thalach": 150,
+      "exang": 0,
+      "oldpeak": 1.0,
+      "slope": 2,
+      "ca": 0,
+      "thal": 3
+    },
+    "prediction": 1,
+    "confidence": 0.6356863388983625
+  },
+  {
+    "timestamp": "2025-08-30T20:27:36.462030",
+    "input_data": {
+      "age": 50,
+      "sex": 1,
+      "cp": 4,
+      "trestbps": 120,
+      "chol": 200,
+      "fbs": 0,
+      "restecg": 0,
+      "thalach": 150,
+      "exang": 0,
+      "oldpeak": 1.0,
+      "slope": 2,
+      "ca": 0,
+      "thal": 3
+    },
+    "prediction": 1,
+    "confidence": 0.6356863388983625
+  },
+  {
+    "timestamp": "2025-08-30T20:27:45.641588",
+    "input_data": {
+      "age": 50,
+      "sex": 1,
+      "cp": 4,
+      "trestbps": 120,
+      "chol": 200,
+      "fbs": 0,
+      "restecg": 0,
+      "thalach": 150,
+      "exang": 0,
+      "oldpeak": 1.0,
+      "slope": 2,
+      "ca": 0,
+      "thal": 3
+    },
+    "prediction": 1,
+    "confidence": 0.6356863388983625
+  },
+  {
+    "timestamp": "2025-08-30T20:27:54.458346",
+    "input_data": {
+      "age": 50,
+      "sex": 1,
+      "cp": 4,
+      "trestbps": 120,
+      "chol": 200,
+      "fbs": 0,
+      "restecg": 0,
+      "thalach": 150,
+      "exang": 0,
+      "oldpeak": 1.0,
+      "slope": 2,
+      "ca": 0,
+      "thal": 3
+    },
+    "prediction": 1,
+    "confidence": 0.6356863388983625
+  },
+  {
+    "timestamp": "2025-08-30T20:27:56.235649",
+    "input_data": {
+      "age": 50,
+      "sex": 1,
+      "cp": 4,
+      "trestbps": 120,
+      "chol": 200,
+      "fbs": 0,
+      "restecg": 0,
+      "thalach": 150,
+      "exang": 0,
+      "oldpeak": 1.0,
+      "slope": 2,
+      "ca": 0,
+      "thal": 3
+    },
+    "prediction": 1,
+    "confidence": 0.6356863388983625
+  },
+  {
+    "timestamp": "2025-08-30T20:28:02.112810",
+    "input_data": {
+      "age": 50,
+      "sex": 1,
+      "cp": 1,
+      "trestbps": 120,
+      "chol": 200,
+      "fbs": 0,
+      "restecg": 0,
+      "thalach": 140,
+      "exang": 1,
+      "oldpeak": 1.0,
+      "slope": 1,
+      "ca": 0,
+      "thal": 3
+    },
+    "prediction": 1,
+    "confidence": 0.7479849819630152
+  },
+  {
+    "timestamp": "2025-08-30T20:28:16.428798",
+    "input_data": {
+      "age": 50,
+      "sex": 1,
+      "cp": 1,
+      "trestbps": 120,
+      "chol": 200,
+      "fbs": 0,
+      "restecg": 0,
+      "thalach": 140,
+      "exang": 1,
+      "oldpeak": 1.0,
+      "slope": 1,
+      "ca": 0,
+      "thal": 3
+    },
+    "prediction": 1,
+    "confidence": 0.7479849819630152
+  },
+  {
+    "timestamp": "2025-08-30T20:28:17.967926",
+    "input_data": {
+      "age": 50,
+      "sex": 1,
+      "cp": 1,
+      "trestbps": 120,
+      "chol": 200,
+      "fbs": 0,
+      "restecg": 0,
+      "thalach": 140,
+      "exang": 1,
+      "oldpeak": 1.0,
+      "slope": 1,
+      "ca": 0,
+      "thal": 3
+    },
+    "prediction": 1,
+    "confidence": 0.7479849819630152
+  }
+]
