@@ -18,3 +18,4 @@ plotly>=5.15.0
 
 # Additional utilities
 Pillow>=9.5.0  # For image processing if needed
+scipy>=1.10.0  # For statistical calculations
